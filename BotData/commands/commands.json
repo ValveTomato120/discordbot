@@ -8,7 +8,7 @@
           "category": "Message",
           "type": "Send Message",
           "channelname": "$$CommandChannel$$",
-          "messagetext": "Hello, <@$$CommandAuthor$$>.\n_\nPrefix is a shash (-).\n_\nCommand for normies are:\n-cmds\n-woah\n-BLM\n_\nCommands for chads are:\n-purge (# of messages)\n-kick (member)\n-ban (member)\n-so939 (use only if you want to purge the server of members!)\n_\nThis is all that I do. I will not be updated, I will not be adapted.\n_\nGod bless this great nation of ours."
+          "messagetext": "Hello, <@$$CommandAuthor$$>.\n\nPrefix is a slash (-).\n\nCommand for normies are:\n-cmds\n-woah\n-BLM\n\nCommands for chads are:\n-purge (# of messages)\n-kick (member)\n-ban (member)\n-so939 (use only if you want to purge the server of members!)\n\nThis is all that I do. I will not be updated, I will not be adapted.\n\nGod bless this great nation of ours."
         }
       ]
     },
@@ -31,7 +31,7 @@
           "name": "BLMresponse",
           "category": "Message",
           "type": "Send Message",
-          "channelname": "$$CommandChannels$$",
+          "channelname": "$$CommandChannel$$",
           "messagetext": "Obama is a shapeshifting lizard <@$$CommandAuthor$$>. By the way, you want a bacon lettuce and mayonese sandwich?\nhttps://cdn.discordapp.com/attachments/722646944673038389/731695565678575696/1592005677476.png\n"
         }
       ]
@@ -56,7 +56,7 @@
               "name": "purge#2",
               "category": "Channel Action",
               "type": "Delete All Messages",
-              "channelname": "$$CommandAuthor$$",
+              "channelname": "$$CommandChannel$$",
               "msgcount": "%%purge#%%"
             },
             {
@@ -64,7 +64,7 @@
               "category": "Message",
               "type": "Send Message",
               "channelname": "$$CommandChannel$$",
-              "messagetext": "Cleared %%purge#%% (with the exception of one due to your message, <@$$CommandAuthor$$>."
+              "messagetext": "Cleared %%purge#%%, <@$$CommandAuthor$$>."
             }
           ],
           "falseActions": [

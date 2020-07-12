@@ -32,13 +32,13 @@
           "id": "ee26b80b-0775-4cb8-9f65-7ef2ca56462b"
         }
       ],
-      "x": 227,
+      "x": 228,
       "y": 76,
       "rtype": "Message",
       "rsubtype": "Send Message",
       "formdata": [
         "$$CommandChannel$$",
-        "Hello, <@$$CommandAuthor$$>.\n_\nPrefix is a shash (-).\n_\nCommand for normies are:\n-cmds\n-woah\n-BLM\n_\nCommands for chads are:\n-purge (# of messages)\n-kick (member)\n-ban (member)\n-so939 (use only if you want to purge the server of members!)\n_\nThis is all that I do. I will not be updated, I will not be adapted.\n_\nGod bless this great nation of ours."
+        "Hello, <@$$CommandAuthor$$>.\n\nPrefix is a slash (-).\n\nCommand for normies are:\n-cmds\n-woah\n-BLM\n\nCommands for chads are:\n-purge (# of messages)\n-kick (member)\n-ban (member)\n-so939 (use only if you want to purge the server of members!)\n\nThis is all that I do. I will not be updated, I will not be adapted.\n\nGod bless this great nation of ours."
       ],
       "formnames": [
         "channelName",
@@ -122,12 +122,12 @@
           "id": "bc26a741-490f-43de-aaab-99beae7a58d1"
         }
       ],
-      "x": 221,
+      "x": 222,
       "y": 334,
       "rtype": "Message",
       "rsubtype": "Send Message",
       "formdata": [
-        "$$CommandChannels$$",
+        "$$CommandChannel$$",
         "Obama is a shapeshifting lizard <@$$CommandAuthor$$>. By the way, you want a bacon lettuce and mayonese sandwich?\nhttps://cdn.discordapp.com/attachments/722646944673038389/731695565678575696/1592005677476.png\n"
       ],
       "formnames": [
@@ -208,7 +208,7 @@
       "rtype": "Channel Action",
       "rsubtype": "Delete All Messages",
       "formdata": [
-        "$$CommandAuthor$$",
+        "$$CommandChannel$$",
         "%%purge#%%"
       ],
       "formnames": [
@@ -239,7 +239,7 @@
       "rsubtype": "Send Message",
       "formdata": [
         "$$CommandChannel$$",
-        "Cleared %%purge#%% (with the exception of one due to your message, <@$$CommandAuthor$$>."
+        "Cleared %%purge#%%, <@$$CommandAuthor$$>."
       ],
       "formnames": [
         "channelName",
@@ -390,7 +390,7 @@
           "id": "8f95fa33-f158-4c1a-883f-1f7131bec499"
         }
       ],
-      "x": 395,
+      "x": 394,
       "y": 741,
       "rtype": "Variable",
       "rsubtype": "Get Mentioned User",
@@ -482,7 +482,7 @@
           "id": "a7062811-bce3-430e-bc01-c587e55b037a"
         }
       ],
-      "x": 765,
+      "x": 766,
       "y": 740,
       "rtype": "Message",
       "rsubtype": "Send Message",
