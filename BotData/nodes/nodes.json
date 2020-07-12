@@ -1,0 +1,761 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "cmds",
+      "guid": "ee26b80b-0775-4cb8-9f65-7ef2ca56462b",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "b67600c1-6bb6-47db-87dd-1f99999ce765"
+          ]
+        }
+      ],
+      "x": 27,
+      "y": 73
+    },
+    {
+      "type": "response",
+      "name": "cmdsresponse",
+      "guid": "b67600c1-6bb6-47db-87dd-1f99999ce765",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ee26b80b-0775-4cb8-9f65-7ef2ca56462b"
+        }
+      ],
+      "x": 227,
+      "y": 76,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "Hello, <@$$CommandAuthor$$>.\n_\nPrefix is a shash (-).\n_\nCommand for normies are:\n-cmds\n-woah\n-BLM\n_\nCommands for chads are:\n-purge (# of messages)\n-kick (member)\n-ban (member)\n-so939 (use only if you want to purge the server of members!)\n_\nThis is all that I do. I will not be updated, I will not be adapted.\n_\nGod bless this great nation of ours."
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "woah",
+      "guid": "611a85b8-a50e-4a52-9349-76ccabdac461",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "95cc187f-136a-4f1a-b515-2cfd3a62399e"
+          ]
+        }
+      ],
+      "x": 27,
+      "y": 200
+    },
+    {
+      "type": "response",
+      "name": "woahresponse",
+      "guid": "95cc187f-136a-4f1a-b515-2cfd3a62399e",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "611a85b8-a50e-4a52-9349-76ccabdac461"
+        }
+      ],
+      "x": 224,
+      "y": 201,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "The most american american I've seen in a long time. https://cdn.discordapp.com/attachments/722646944673038389/731691192995282984/most_american_thing_ever.mp4"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "BLM",
+      "guid": "bc26a741-490f-43de-aaab-99beae7a58d1",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "cc271e90-15d0-4528-8fbf-10a4af60f8d0"
+          ]
+        }
+      ],
+      "x": 29,
+      "y": 334
+    },
+    {
+      "type": "response",
+      "name": "BLMresponse",
+      "guid": "cc271e90-15d0-4528-8fbf-10a4af60f8d0",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "bc26a741-490f-43de-aaab-99beae7a58d1"
+        }
+      ],
+      "x": 221,
+      "y": 334,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannels$$",
+        "Obama is a shapeshifting lizard <@$$CommandAuthor$$>. By the way, you want a bacon lettuce and mayonese sandwich?\nhttps://cdn.discordapp.com/attachments/722646944673038389/731695565678575696/1592005677476.png\n"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "purge",
+      "guid": "ca318809-3982-470d-8fac-c8af566a0805",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4f83533d-8d58-4c5b-a074-3003e26e1160"
+          ]
+        }
+      ],
+      "x": 28,
+      "y": 462
+    },
+    {
+      "type": "response",
+      "name": "purge#",
+      "guid": "ce9d0006-ff02-4233-a4c9-0da2a3ad352b",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f87fe4f3-2ed2-4edd-ac75-01fa1b7e8dd4"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4f83533d-8d58-4c5b-a074-3003e26e1160"
+        }
+      ],
+      "x": 392,
+      "y": 463,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "purge#",
+        "Number",
+        "0"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "param"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "purge#2",
+      "guid": "f87fe4f3-2ed2-4edd-ac75-01fa1b7e8dd4",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "d503f5fd-7de7-4c64-a914-d5103790b821"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ce9d0006-ff02-4233-a4c9-0da2a3ad352b"
+        }
+      ],
+      "x": 587,
+      "y": 462,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "$$CommandAuthor$$",
+        "%%purge#%%"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "purge#3",
+      "guid": "d503f5fd-7de7-4c64-a914-d5103790b821",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f87fe4f3-2ed2-4edd-ac75-01fa1b7e8dd4"
+        }
+      ],
+      "x": 782,
+      "y": 463,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "Cleared %%purge#%% (with the exception of one due to your message, <@$$CommandAuthor$$>."
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "purgecheck",
+      "guid": "4f83533d-8d58-4c5b-a074-3003e26e1160",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "has perms",
+          "connections": [
+            "ce9d0006-ff02-4233-a4c9-0da2a3ad352b"
+          ]
+        },
+        {
+          "label": "doesn't have perms",
+          "connections": [
+            "75451cae-7e0f-4f6b-9ac6-ae01a52cf91e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ca318809-3982-470d-8fac-c8af566a0805"
+        }
+      ],
+      "x": 211,
+      "y": 459,
+      "rtype": "User Action",
+      "rsubtype": "Check User Permissions",
+      "formdata": [
+        "$$CommandAuthor$$",
+        [
+          "ADMINISTRATOR"
+        ]
+      ],
+      "formnames": [
+        "user",
+        "permissions"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "nopurge",
+      "guid": "75451cae-7e0f-4f6b-9ac6-ae01a52cf91e",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4f83533d-8d58-4c5b-a074-3003e26e1160"
+        }
+      ],
+      "x": 389,
+      "y": 597,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "Poggers you're a normie <@$$CommandAuthor$$>! https://cdn.discordapp.com/attachments/722646944673038389/731696679534854184/BernieRun.gif"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "kick",
+      "guid": "af79eb99-f2bf-4af1-b96d-0624e092b08f",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "8f95fa33-f158-4c1a-883f-1f7131bec499"
+          ]
+        }
+      ],
+      "x": 31,
+      "y": 742
+    },
+    {
+      "type": "response",
+      "name": "kickcheck",
+      "guid": "8f95fa33-f158-4c1a-883f-1f7131bec499",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "has perms",
+          "connections": [
+            "c8050d7c-4e16-4868-a9f0-c699be5f39ee"
+          ]
+        },
+        {
+          "label": "doesn't have perms",
+          "connections": [
+            "babdf764-73da-405b-a119-febcd288134f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "af79eb99-f2bf-4af1-b96d-0624e092b08f"
+        }
+      ],
+      "x": 215,
+      "y": 743,
+      "rtype": "User Action",
+      "rsubtype": "Check User Permissions",
+      "formdata": [
+        "$$CommandAuthor$$",
+        [
+          "ADMINISTRATOR"
+        ]
+      ],
+      "formnames": [
+        "user",
+        "permissions"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "kick#",
+      "guid": "c8050d7c-4e16-4868-a9f0-c699be5f39ee",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "a7062811-bce3-430e-bc01-c587e55b037a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8f95fa33-f158-4c1a-883f-1f7131bec499"
+        }
+      ],
+      "x": 395,
+      "y": 741,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "kick#",
+        "User"
+      ],
+      "formnames": [
+        "varname",
+        "vartype"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "kick#2",
+      "guid": "a7062811-bce3-430e-bc01-c587e55b037a",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ce048b2d-b40b-4df9-a02d-2e6c471571ae"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c8050d7c-4e16-4868-a9f0-c699be5f39ee"
+        }
+      ],
+      "x": 579,
+      "y": 741,
+      "rtype": "User Action",
+      "rsubtype": "Kick User",
+      "formdata": [
+        "%%kick#%%",
+        ""
+      ],
+      "formnames": [
+        "user",
+        "reason"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "nokick",
+      "guid": "babdf764-73da-405b-a119-febcd288134f",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8f95fa33-f158-4c1a-883f-1f7131bec499"
+        }
+      ],
+      "x": 395,
+      "y": 881,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "Poggers you're a normie <@$$CommandAuthor$$>! https://cdn.discordapp.com/attachments/722646944673038389/731696679534854184/BernieRun.gif"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "kick#3",
+      "guid": "ce048b2d-b40b-4df9-a02d-2e6c471571ae",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a7062811-bce3-430e-bc01-c587e55b037a"
+        }
+      ],
+      "x": 765,
+      "y": 740,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "Kicked %%kick#%%, <@$$CommandAuthor$$>."
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "ban",
+      "guid": "915996d8-3edc-4987-9bc9-e6df26932206",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "7ea4026a-187c-44c6-ada5-59880002deae"
+          ]
+        }
+      ],
+      "x": 37,
+      "y": 1020
+    },
+    {
+      "type": "response",
+      "name": "bancheck",
+      "guid": "7ea4026a-187c-44c6-ada5-59880002deae",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "has perms",
+          "connections": [
+            "8f676ed9-006d-4941-afba-bdfa2a93b5ca"
+          ]
+        },
+        {
+          "label": "doesn't have perms",
+          "connections": [
+            "6fb2dbf9-8b19-4b64-9529-0e6ebfcaba06"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "915996d8-3edc-4987-9bc9-e6df26932206"
+        }
+      ],
+      "x": 215,
+      "y": 1021,
+      "rtype": "User Action",
+      "rsubtype": "Check User Permissions",
+      "formdata": [
+        "$$CommandAuthor$$",
+        [
+          "ADMINISTRATOR"
+        ]
+      ],
+      "formnames": [
+        "user",
+        "permissions"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "ban#",
+      "guid": "8f676ed9-006d-4941-afba-bdfa2a93b5ca",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8adaefea-4ba7-4c6c-87c1-f39366db1deb"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7ea4026a-187c-44c6-ada5-59880002deae"
+        }
+      ],
+      "x": 400,
+      "y": 1022,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "ban#",
+        "User"
+      ],
+      "formnames": [
+        "varname",
+        "vartype"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "ban#2",
+      "guid": "8adaefea-4ba7-4c6c-87c1-f39366db1deb",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c094aa06-ad19-412d-97cd-11e387ec1f74"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8f676ed9-006d-4941-afba-bdfa2a93b5ca"
+        }
+      ],
+      "x": 583,
+      "y": 1020,
+      "rtype": "User Action",
+      "rsubtype": "Ban User",
+      "formdata": [
+        "%%ban#%%",
+        "",
+        "1000"
+      ],
+      "formnames": [
+        "user",
+        "reason",
+        "days"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "ban#3",
+      "guid": "c094aa06-ad19-412d-97cd-11e387ec1f74",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8adaefea-4ba7-4c6c-87c1-f39366db1deb"
+        }
+      ],
+      "x": 764,
+      "y": 1022,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "Banned %%ban#%%, <@$$CommandAuthor$$>."
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "noban",
+      "guid": "6fb2dbf9-8b19-4b64-9529-0e6ebfcaba06",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7ea4026a-187c-44c6-ada5-59880002deae"
+        }
+      ],
+      "x": 399,
+      "y": 1163,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "Poggers you're a normie <@$$CommandAuthor$$>! https://cdn.discordapp.com/attachments/722646944673038389/731696679534854184/BernieRun.gif"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "so939",
+      "guid": "75c34bb6-d421-4018-b818-53986570b54b",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "25954e11-fd16-47a1-b19b-ccb11303104a"
+          ]
+        }
+      ],
+      "x": 43,
+      "y": 1300
+    },
+    {
+      "type": "response",
+      "name": "socheck",
+      "guid": "dd6f41a3-9122-4eb9-b9ad-b66f99519829",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "has perms",
+          "connections": []
+        },
+        {
+          "label": "doesn't have perms",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "75c34bb6-d421-4018-b818-53986570b54b"
+        }
+      ],
+      "x": 45,
+      "y": 1410,
+      "rtype": "User Action",
+      "rsubtype": "Check User Permissions",
+      "formdata": [
+        "$$CommandAuthor$$",
+        [
+          "ADMINISTRATOR"
+        ]
+      ],
+      "formnames": [
+        "user",
+        "permissions"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "so939temp",
+      "guid": "25954e11-fd16-47a1-b19b-ccb11303104a",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "75c34bb6-d421-4018-b818-53986570b54b"
+        }
+      ],
+      "x": 228,
+      "y": 1302,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "$$CommandChannel$$",
+        "Bot manager in process of setting this up, for now just use -ban @everyone and it should work."
+      ],
+      "formnames": [
+        "channelName",
+        "messageText"
+      ]
+    }
+  ]
+}

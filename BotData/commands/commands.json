@@ -1,0 +1,192 @@
+{
+  "command": [
+    {
+      "name": "cmds",
+      "actions": [
+        {
+          "name": "cmdsresponse",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "$$CommandChannel$$",
+          "messagetext": "Hello, <@$$CommandAuthor$$>.\n_\nPrefix is a shash (-).\n_\nCommand for normies are:\n-cmds\n-woah\n-BLM\n_\nCommands for chads are:\n-purge (# of messages)\n-kick (member)\n-ban (member)\n-so939 (use only if you want to purge the server of members!)\n_\nThis is all that I do. I will not be updated, I will not be adapted.\n_\nGod bless this great nation of ours."
+        }
+      ]
+    },
+    {
+      "name": "woah",
+      "actions": [
+        {
+          "name": "woahresponse",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "$$CommandChannel$$",
+          "messagetext": "The most american american I've seen in a long time. https://cdn.discordapp.com/attachments/722646944673038389/731691192995282984/most_american_thing_ever.mp4"
+        }
+      ]
+    },
+    {
+      "name": "BLM",
+      "actions": [
+        {
+          "name": "BLMresponse",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "$$CommandChannels$$",
+          "messagetext": "Obama is a shapeshifting lizard <@$$CommandAuthor$$>. By the way, you want a bacon lettuce and mayonese sandwich?\nhttps://cdn.discordapp.com/attachments/722646944673038389/731695565678575696/1592005677476.png\n"
+        }
+      ]
+    },
+    {
+      "name": "purge",
+      "actions": [
+        {
+          "name": "purgecheck",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "purge#",
+              "category": "Variable",
+              "type": "Store Value in Variable",
+              "varname": "purge#",
+              "vartype": "Number",
+              "param": "0"
+            },
+            {
+              "name": "purge#2",
+              "category": "Channel Action",
+              "type": "Delete All Messages",
+              "channelname": "$$CommandAuthor$$",
+              "msgcount": "%%purge#%%"
+            },
+            {
+              "name": "purge#3",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "$$CommandChannel$$",
+              "messagetext": "Cleared %%purge#%% (with the exception of one due to your message, <@$$CommandAuthor$$>."
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "nopurge",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "$$CommandChannel$$",
+              "messagetext": "Poggers you're a normie <@$$CommandAuthor$$>! https://cdn.discordapp.com/attachments/722646944673038389/731696679534854184/BernieRun.gif"
+            }
+          ],
+          "user": "$$CommandAuthor$$",
+          "permissions": [
+            "ADMINISTRATOR"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "kick",
+      "actions": [
+        {
+          "name": "kickcheck",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "kick#",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "varname": "kick#",
+              "vartype": "User"
+            },
+            {
+              "name": "kick#2",
+              "category": "User Action",
+              "type": "Kick User",
+              "user": "%%kick#%%",
+              "reason": ""
+            },
+            {
+              "name": "kick#3",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "$$CommandChannel$$",
+              "messagetext": "Kicked %%kick#%%, <@$$CommandAuthor$$>."
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "nokick",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "$$CommandChannel$$",
+              "messagetext": "Poggers you're a normie <@$$CommandAuthor$$>! https://cdn.discordapp.com/attachments/722646944673038389/731696679534854184/BernieRun.gif"
+            }
+          ],
+          "user": "$$CommandAuthor$$",
+          "permissions": [
+            "ADMINISTRATOR"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ban",
+      "actions": [
+        {
+          "name": "bancheck",
+          "category": "User Action",
+          "type": "Check User Permissions",
+          "trueActions": [
+            {
+              "name": "ban#",
+              "category": "Variable",
+              "type": "Get Mentioned User",
+              "varname": "ban#",
+              "vartype": "User"
+            },
+            {
+              "name": "ban#2",
+              "category": "User Action",
+              "type": "Ban User",
+              "user": "%%ban#%%",
+              "reason": "",
+              "days": "1000"
+            },
+            {
+              "name": "ban#3",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "$$CommandChannel$$",
+              "messagetext": "Banned %%ban#%%, <@$$CommandAuthor$$>."
+            }
+          ],
+          "falseActions": [
+            {
+              "name": "noban",
+              "category": "Message",
+              "type": "Send Message",
+              "channelname": "$$CommandChannel$$",
+              "messagetext": "Poggers you're a normie <@$$CommandAuthor$$>! https://cdn.discordapp.com/attachments/722646944673038389/731696679534854184/BernieRun.gif"
+            }
+          ],
+          "user": "$$CommandAuthor$$",
+          "permissions": [
+            "ADMINISTRATOR"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "so939",
+      "actions": [
+        {
+          "name": "so939temp",
+          "category": "Message",
+          "type": "Send Message",
+          "channelname": "$$CommandChannel$$",
+          "messagetext": "Bot manager in process of setting this up, for now just use -ban @everyone and it should work."
+        }
+      ]
+    }
+  ]
+}
